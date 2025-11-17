@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>关于编程语言的一些个人思考</title>
+    <url>/2018/01/19/2018-1-19-%E5%85%B3%E4%BA%8E%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>近日读松本行弘的《代码的未来》略有感触，随有此记。</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>一种语言要流行起来不外乎三点，其一：该语言应该具有良好的设计以及语言规范；其二：语言具有较好的效率，这里的效率指两方面，编译运行的效率以及开发的效率；其三：语言具有丰富的第三方类库，第三方类库的丰富也说明其开发社区的活跃。不过以上三点并不是说全部具有才是流行的标准，三者有其二，应该说就具备了流行的条件了。另外，关于编译运行的效率我们不能单方面的对比，比如说，拿静态语言跟动态语言相比这种毫无头脑的对比。任何语言都有适合自己的运行场景，如何在该场景下选择合适的语言，并且发挥出它最大的效率，这个才是应该思考的问题。<br>读书时我有以下几个问题：</p>
+<ul>
+<li>开发一门语言的核心时应该追求怎样的设计？</li>
+</ul>
+<p>比如说我追求极简的设计原则，内核只包含运行所必须的组件之外，其余均已第三方类库的形式提供，这种方式到底合不合理；还是说，我把开发所需要的组件全部包含进来。不过以上两种情况都是非常极端的情况，现实中开发一门语言往往会综合考虑这两方面的情况。<br>我们就说说Java9，Oracle从Java9开始对JDK进行了模块的划分。Java9之前的Java版本，我们在运行环境部署的JDK其实部分的类库在运行时根本不需要，有些只是在开发时才需要的类库，为什么我们要运行环境也是用呢。Java9进行模块化以后，我们就可以仅仅将运行时所需的类库打包即可。</p>
+<p>不过话说回来，到底开发一种什么样的语言还是应该根据需求来。毕竟技术还是需求来服务的。但是是不是说我们只是仅仅根据需求来进行技术研发，答案是否定的。以研发为目的的技术研究也是需要的。以需求来进行技术驱动的缺点是无法产生跨越式的发展，用一个词来形容应该是技术爆炸。我们现在流行的很多技术都是20世纪研究室的产物，就拿现在流行的go语言来说也是，它是上世纪80年代Plan9的项目的延伸产物。所以设计一门语言，我们应该首先确定这个语言的应用场景，我们到底用这门语言做什么，在那个地方做。确定了目标之后，就可以以这个为目标前进了。</p>
+<p>有点跑题了，再说回语言的设计原则。其实到底追求哪个方面的设计也应该是根据需求来的。追求极简，为何要追求极简，比如嵌入式类型的设备，我的路由器，或者家具上一个接受蓝牙信号的设备，这种设备的存储容量是很小的，我不可能说单一个SDK就几百兆；追求复杂，我开发一个大型项目，连最基本的开发所需要的类库都需要我手动引入，这种设计是不是不好，当然也不一定。但是既然要提高开发的效率，那肯定是你SDK提供的功能越丰富，我自己需要编码的东西就越少，开发的效率就越高。</p>
+<ul>
+<li>后话</li>
+</ul>
+<p>个人思考，鉴于视野并不是那么阔，所以肯定有失误之处。您要是愿意给晚辈指出，晚辈在此谢谢您了。要是不愿意，那我也谢谢您的阅读。自己是一个刚入职场的新人。并没有太多的开发经验，对于技术的研究学习，是自己的兴趣之一。</p>
+<p>更新时间：2018年1月29日</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>代码的未来</tag>
+        <tag>go语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Apache相关知识</title>
+    <url>/2018/01/24/2018-1-24-Apache%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="Apache目录结构"><a href="#Apache目录结构" class="headerlink" title="Apache目录结构"></a>Apache目录结构</h2><table>
+<thead>
+<tr>
+<th>目录名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bin</td>
+<td>可执行文件</td>
+</tr>
+<tr>
+<td>conf</td>
+<td>配置文件</td>
+</tr>
+<tr>
+<td>htdoce</td>
+<td>缺省的网站根目录</td>
+</tr>
+<tr>
+<td>include</td>
+<td>头文件</td>
+</tr>
+<tr>
+<td>logs</td>
+<td>日志</td>
+</tr>
+<tr>
+<td>man</td>
+<td>手册</td>
+</tr>
+<tr>
+<td>manual</td>
+<td>联机文档</td>
+</tr>
+<tr>
+<td>modules</td>
+<td>存放一些编译好的软件</td>
+</tr>
+</tbody></table>
+<h2 id="Apache-httpd-conf部分配置"><a href="#Apache-httpd-conf部分配置" class="headerlink" title="Apache httpd.conf部分配置"></a>Apache httpd.conf部分配置</h2><table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ServerRoot</td>
+<td>服务器根目录（不是Web根目录）</td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>监听的接口</td>
+</tr>
+<tr>
+<td>DirectoryIndex</td>
+<td>默认的索引页面</td>
+</tr>
+<tr>
+<td>User</td>
+<td>运行服务的用户</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>运行服务的用户组</td>
+</tr>
+<tr>
+<td>ServerName</td>
+<td>网站的服务器域名</td>
+</tr>
+<tr>
+<td>ServerAdmin</td>
+<td>管理员邮箱地址</td>
+</tr>
+<tr>
+<td>CustomLog</td>
+<td>记录访问日志的文件地址</td>
+</tr>
+<tr>
+<td>ErrorLog</td>
+<td>记录错误日志的文件地址</td>
+</tr>
+<tr>
+<td>DocumentRoot</td>
+<td>网站数据目录</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Apache</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HelloWorld</title>
+    <url>/2016/11/07/2016-11-07-HelloWorld/</url>
+    <content><![CDATA[<ul>
+<li>Chinese 你好世界</li>
+<li>English HelloWorld</li>
+<li>Japanese こんにちは世界</li>
+</ul>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>HelloWorld</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>FHS(文件目录标准)</title>
+    <url>/2018/01/24/2018-1-24-FHS(%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%87%E5%87%86)/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>目录名称</th>
+<th>父目录</th>
+<th>关键子目录及文件（可选）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x2F;</td>
+<td>无</td>
+<td></td>
+<td>系统根目录</td>
+</tr>
+<tr>
+<td>bin</td>
+<td>&#x2F;</td>
+<td></td>
+<td>一般用户可用，启动时用到的命令，即没有挂载文件系统时也可以使用的命令</td>
+</tr>
+<tr>
+<td>boot</td>
+<td>&#x2F;</td>
+<td>grub：开机设置相关的文件</br>内核文件：vmlinuz</td>
+<td>开 机需要的文件</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>&#x2F;</td>
+<td></td>
+<td>存放设备文件</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>&#x2F;</td>
+<td>rc.d：用于存放不同运行等级的启动脚本的连接文件</br>X11</td>
+<td>包含系统特有的可编辑配置</td>
+</tr>
+<tr>
+<td>home</td>
+<td>&#x2F;</td>
+<td></td>
+<td>用户目录</td>
+</tr>
+<tr>
+<td>lib</td>
+<td>&#x2F;</td>
+<td></td>
+<td>用于存放程序的动态库和模块文件</td>
+</tr>
+<tr>
+<td>media</td>
+<td>&#x2F;</td>
+<td></td>
+<td>用于挂载本地磁盘或其他存储设备</td>
+</tr>
+<tr>
+<td>mnt</td>
+<td>&#x2F;</td>
+<td></td>
+<td>用于挂载其他临时文件系统</td>
+</tr>
+<tr>
+<td>opt</td>
+<td>&#x2F;</td>
+<td></td>
+<td>发行版附加的一些软件包的安装目录</td>
+</tr>
+<tr>
+<td>root</td>
+<td>&#x2F;</td>
+<td></td>
+<td>root用户目录</td>
+</tr>
+<tr>
+<td>sbin</td>
+<td>&#x2F;</td>
+<td></td>
+<td>包含很多只有root用户才有权限执行的命令，还包含一些系统更新，备份，还原和开关机用到的命令</td>
+</tr>
+<tr>
+<td>srv</td>
+<td>&#x2F;</td>
+<td></td>
+<td>存放服务进程所需要的数据文件和一些服务的执行脚本</td>
+</tr>
+<tr>
+<td>tmp</td>
+<td>&#x2F;</td>
+<td></td>
+<td>存放临时文件</td>
+</tr>
+<tr>
+<td>usr</td>
+<td>&#x2F;</td>
+<td>bin：非必要可执行文件（在单用户模式中不需要）；面向所有用户</br>include：标准包含头文件</br>lib：&#x2F;usr&#x2F;bin&#x2F;和&#x2F;usr&#x2F;sbin&#x2F;中二进制文件的库</br>local：存放用户自习安装的软件</br>share：共享数据</br>sbin：非必要的系统二进制文件</br>src：源代码文件</td>
+<td></td>
+</tr>
+<tr>
+<td>var</td>
+<td>&#x2F;</td>
+<td></td>
+<td>变量文件，系统正常运行中内容不断变化的文件，如日志</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>FHS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS下Apache安装总结</title>
+    <url>/2018/01/24/2018-1-24-CentOS%E4%B8%8BApache%E5%AE%89%E8%A3%85%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h2 id="环境（Environment）"><a href="#环境（Environment）" class="headerlink" title="环境（Environment）"></a>环境（Environment）</h2><p>操作系统：CentOS 6.8<br>服务器：Apache 2.4.29<br>其他关键依赖库：apr 1.6.3、apr-util 1.6.1、pcre-8.41</p>
+<h2 id="命令（Command）"><a href="#命令（Command）" class="headerlink" title="命令（Command）"></a>命令（Command）</h2><ul>
+<li>解压命令</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令格式</th>
+<th>命令说明</th>
+<th>命令参数解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tar zxvf [dir1] -C [dir2]</td>
+<td>将dir1下的文件解压到dir2指定的目录下</td>
+<td>无</td>
+</tr>
+<tr>
+<td>rpm -qa [software-name]</td>
+<td>查询指定的软件</td>
+<td>无</td>
+</tr>
+<tr>
+<td>rpm -e –nodeps [software-full-name]</td>
+<td>卸载指定名称的软件</td>
+<td>–nodeps：不做软件之间的依赖检查</td>
+</tr>
+<tr>
+<td>.&#x2F;configure –prefix&#x3D;[dir] –with-[lib]</td>
+<td>无</td>
+<td>–prefix：指定安装目录</br>–with-[lib]：依赖（个人理解）</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>Apache安装</p>
+</li>
+<li><p>编译安装（make install）</p>
+</li>
+</ul>
+<h2 id="问题（problem）"><a href="#问题（problem）" class="headerlink" title="问题（problem）"></a>问题（problem）</h2><table>
+<thead>
+<tr>
+<th>发生时间</th>
+<th><strong>错误内容</strong></th>
+<th>解决方案（个人）</th>
+<th>解决方案（网络）</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apache 安装时</td>
+<td><strong>error:Cannot use an external APR with the bundled APR-util</strong></td>
+<td>对apr-util重新进行编译安装</td>
+<td>Google</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Apache 安装时</td>
+<td><strong>error:Did not find pcre-config script at [dir]</strong></td>
+<td>将pcre2替换为pcre，然后进行编译安装</td>
+<td>Google</td>
+<td>低</td>
+</tr>
+<tr>
+<td>pcre安装时</td>
+<td><strong>error: You need a C++ Compiler for C++ Support</strong></td>
+<td>Google</td>
+<td>yum install -y gcc gcc-c++</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Apache 安装时</td>
+<td><strong>error:pcre-config for libpcre not found</strong></td>
+<td>在.&#x2F;configure 配置时使用–with-pcre&#x3D;[dir]指定pcre安装目录</td>
+<td>重新安装或者第一次安装pcre</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Apache 安装时</td>
+<td><strong>error:no acceptable C complier found in $PATH</strong></td>
+<td>Google</td>
+<td>yum -y install gcc</td>
+<td>高</td>
+</tr>
+<tr>
+<td>apr-util 安装时</td>
+<td>（一部分错误提示）<strong>error:’apr_xml_parser’ has no memebr named ‘xp’</strong></td>
+<td>Google</td>
+<td>yum install expat-devel</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Apache 安装时</td>
+<td>（一部分错误提示）<strong>error:openssl version is too old</strong></td>
+<td>Google</td>
+<td>yum install openssl-devel</br>yum update openssl</td>
+<td>高</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Apache</tag>
+        <tag>CentOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim常用命令</title>
+    <url>/2018/01/24/2018-1-24-Vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h,j,k,l</td>
+<td>左下上右</td>
+</tr>
+<tr>
+<td>^</td>
+<td>光标所在行的开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>光标所在行的结尾</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>文档的第一行</td>
+</tr>
+<tr>
+<td>[N]G</td>
+<td>输入数字+G跳转到文档的第N行，或者直接输入G会跳转到文档的最后一行</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>复制光标所在的一整行</td>
+</tr>
+<tr>
+<td>[N]yy</td>
+<td>复制从光标开始的N行</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>删除(剪切)光标所在的行</td>
+</tr>
+<tr>
+<td>[N]dd</td>
+<td>删除(剪切)光标开始的N行</td>
+</tr>
+<tr>
+<td>p</td>
+<td>将之前删除或者复制过的数据粘贴到光标后</td>
+</tr>
+<tr>
+<td>&#x2F;[str]</td>
+<td>从上到下搜索指定的字符串</td>
+</tr>
+<tr>
+<td>?[str]</td>
+<td>从下到上搜索指定的字符串</td>
+</tr>
+<tr>
+<td>u</td>
+<td>撤销上一步操作</td>
+</tr>
+<tr>
+<td>i</td>
+<td>进入插入模式，在光标前插入字符</td>
+</tr>
+<tr>
+<td>a</td>
+<td>进入插入模式，在光标后插入字符</td>
+</tr>
+<tr>
+<td>o</td>
+<td>在新的一行插入字符</td>
+</tr>
+</tbody></table>
+<h2 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:w</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>:q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>强制退出，放弃对文本的修改</td>
+</tr>
+<tr>
+<td>:wq!</td>
+<td>强制保存退出</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>保存退出</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LVM(Logical Volume Manager)逻辑卷管理器</title>
+    <url>/2018/01/24/2018-1-24-LVM(Logical%20Volume%20Manager)%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+    <content><![CDATA[<h2 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h2><table>
+<thead>
+<tr>
+<th>中文名</th>
+<th>英文简称及全称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>物理卷</td>
+<td>PV,Physical Volume</td>
+<td>整个硬盘设备或者使用fdisk命令建立的硬盘分区</td>
+</tr>
+<tr>
+<td>卷组</td>
+<td>VG,Volume Group</td>
+<td>由一个或多个物理卷（PV）组成的整体</td>
+</tr>
+<tr>
+<td>逻辑卷</td>
+<td>LV,Logical Volume</td>
+<td>从卷组（VG）处切割出的空间用于创建文件系统，大小由PE的个数决定</td>
+</tr>
+<tr>
+<td>本单元</td>
+<td>PE,Physical Extent</td>
+<td>默认为4MB的基本块</td>
+</tr>
+</tbody></table>
+<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><p>注：LVM相关的命令都是如下格式：<br>[英文简称]+[操作]<br>如：显示物理卷信息的命令是pvdisplay</p>
+<table>
+<thead>
+<tr>
+<th>功能&#x2F;命令</th>
+<th>物理卷管理</th>
+<th>卷组管理</th>
+<th>逻辑卷管理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>扫描</td>
+<td>pvscan</td>
+<td>vgscan</td>
+<td>lvscan</td>
+</tr>
+<tr>
+<td>建立</td>
+<td>pvcreate</td>
+<td>pvcreate</td>
+<td>lvcreate</td>
+</tr>
+<tr>
+<td>显示</td>
+<td>pvdisplay</td>
+<td>vgdisplay</td>
+<td>lvdisplay</td>
+</tr>
+<tr>
+<td>删除</td>
+<td>pvremove</td>
+<td>vgremove</td>
+<td>lvremove</td>
+</tr>
+<tr>
+<td>扩展</td>
+<td>vgextend</td>
+<td>lvextend</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>LVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Intellij_Idea关于properties编码问题</title>
+    <url>/2018/01/25/2018-1-25-Intellij_Idea%E5%85%B3%E4%BA%8Eproperties%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>测试代码</li>
+</ul>
+<p>测试源代码</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PropertiesTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testLanguage</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">ResourceBundle</span> <span class="variable">bundle</span> <span class="operator">=</span> ResourceBundle.getBundle(<span class="string">&quot;globalMessages_zh_CN&quot;</span>);</span><br><span class="line">        Assert.assertEquals(<span class="string">&quot;用户名&quot;</span>, bundle.getString(<span class="string">&quot;username&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>测试properties(格式是UTF-8)</p>
+<div class="highlight-container" data-rel="Properties"><figure class="iseeu highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">check</span>=<span class="string">请选择语言</span></span><br><span class="line"><span class="attr">chinese</span>=<span class="string">中文</span></span><br><span class="line"><span class="attr">english</span>=<span class="string">英文</span></span><br><span class="line"><span class="attr">login</span>=<span class="string">登录</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">密码</span></span><br><span class="line"><span class="attr">title</span>=<span class="string">欢迎来到本站</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">用户名</span></span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>测试结果</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/Intellij-Idea/luanma.png"
+                      alt="乱码"
+                ></p>
+<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>在笔者使用properties配置文件做国际化的时候，遇到了一个很常见的问题，properties文件中的中文在前台读取到之后，就变成了乱码。前台页面显示乱码的原因在笔者所接触的范围内大概有两个，一个是前台的JSP页面设置的编码格式不正确，这里具体指如下两个变量:</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">pageEncoding=<span class="string">&quot;UTF-8&quot;</span> </span><br><span class="line">contentType=<span class="string">&quot;text/html; UTF-8&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>这两个变量如果设置了与浏览器格式不相符的编码格式可能会造成问题,当然这两个变量之间也有区别：</p>
+<ul>
+<li><p>pageEncoding是jsp文件本身的编码</p>
+</li>
+<li><p>contentType的charset是指服务器发送给客户端时的内容编码</p>
+</li>
+</ul>
+<p>这第二个原因就是properties本身文件的编码格式与前台不匹配。比如说properties文件是GBK，而前台（浏览器）是UTF-8,就会造成乱码问题。然而，笔者的Intelij Idea文件编码设置有确实是UTF-8</p>
+<ul>
+<li>Intellij Idea 文件编码设置界面</li>
+</ul>
+<p>File-&gt;Settings-&gt;Editor-&gt;File Encodings</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/Intellij-Idea/intellijidea-file-encoding-setting.png"
+                      alt="编码设置"
+                ></p>
+<p>至于这里为何即使采用UTF-8也会出现乱码，网上一说是由于Java解析properties文件是采用字节流读取，所以导致了会将汉字根据字节流读取，具体笔者也没有仔细去深究。_(:з)∠)_</p>
+<p>这里提供如下解决方法：</p>
+<p>解决方法的原则就是在properties中使用unicode来表示中文</p>
+<ul>
+<li><p>如果你是使用的是Intellij Idea。打开如上图所示编码设置的文件，在Transparent native-to-ascii conversion选择框上点上对号即可。Intellij Idea 会在你输入中文的时候自动将它转成Unicode格式，同时你看到的仍然是中文（当你把刚才点上的对号取消后就可以看到Unicode了），另外需要注意的一点是，如果你在选项没有点上对号的时候输入中文的话，解析出来仍然是乱码。</p>
+</li>
+<li><p>如果你是其他IDE或者工具的用户，可以选择使用jdk自带的工具native2ascii.exe，该文件在jdk的bin目录中，使用方式请自行google。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Intellij-Idea</category>
+      </categories>
+      <tags>
+        <tag>Intellij-Idea</tag>
+        <tag>properties</tag>
+        <tag>乱码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Java4种自增方法的不同</title>
+    <url>/2018/10/10/2018-10-10-Java%E8%87%AA%E5%A2%9E%E6%96%B9%E6%B3%95%E7%9A%84%E8%A7%A3%E6%9E%90/</url>
+    <content><![CDATA[<h2 id="4种自增的方法"><a href="#4种自增的方法" class="headerlink" title="4种自增的方法"></a>4种自增的方法</h2><ul>
+<li>i++</li>
+<li>++i</li>
+<li>i+&#x3D;1</li>
+<li>i&#x3D;i+1</li>
+</ul>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		method1();<span class="comment">// i=i+1</span></span><br><span class="line">		method2();<span class="comment">// i+=1</span></span><br><span class="line">		method3();<span class="comment">// i++</span></span><br><span class="line">		method4();<span class="comment">// ++i</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i = i + <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i += <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i++);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(++i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure></div>
+<h2 id="解释说明"><a href="#解释说明" class="headerlink" title="解释说明"></a>解释说明</h2><ul>
+<li>第一种<code>i=i+1</code>:首先<code>=</code>的优先级小于<code>+</code>，所以该表达式会首先进行加法操作，然后再进行赋值操作</li>
+<li>第二种<code>i+=1</code>:第一种方法的优化版本？;</li>
+<li>第三种<code>i++</code>:先参与操作，后自增</li>
+<li>第四种<code>++i</code>:先自增，后参与操作</li>
+</ul>
+<p>以上都是大家都熟知的想法</p>
+<h2 id="从字节码的角度"><a href="#从字节码的角度" class="headerlink" title="从字节码的角度"></a>从字节码的角度</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Compiled from <span class="string">&quot;HelloWorld.java&quot;</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">HelloWorld</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: aload_0</span><br><span class="line">       <span class="number">1</span>: invokespecial #<span class="number">1</span>                  <span class="comment">// Method java/lang/Object.&quot;&lt;init&gt;&quot;:()V</span></span><br><span class="line">       <span class="number">4</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(java.lang.String[])</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: invokestatic  #<span class="number">2</span>                  <span class="comment">// Method method1:()V</span></span><br><span class="line">       <span class="number">3</span>: invokestatic  #<span class="number">3</span>                  <span class="comment">// Method method2:()V</span></span><br><span class="line">       <span class="number">6</span>: invokestatic  #<span class="number">4</span>                  <span class="comment">// Method method3:()V</span></span><br><span class="line">       <span class="number">9</span>: invokestatic  #<span class="number">5</span>                  <span class="comment">// Method method4:()V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iload_0</span><br><span class="line">       <span class="number">3</span>: iconst_1</span><br><span class="line">       <span class="number">4</span>: iadd</span><br><span class="line">       <span class="number">5</span>: istore_0</span><br><span class="line">       <span class="number">6</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">9</span>: iload_0</span><br><span class="line">      <span class="number">10</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">13</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">5</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iload_0</span><br><span class="line">       <span class="number">6</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<table>
+<thead>
+<tr>
+<th>指令码</th>
+<th>操作码（助记符）</th>
+<th>操作数</th>
+<th>描述（栈指操作数栈）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x03</td>
+<td>iconst_0</td>
+<td>无</td>
+<td>0(int)值入栈</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>iconst_1</td>
+<td>无</td>
+<td>1(int)值入栈</td>
+</tr>
+<tr>
+<td>0x1a</td>
+<td>iload_0</td>
+<td>无</td>
+<td>从局部变量0中装载int类型值入栈</td>
+</tr>
+<tr>
+<td>0x3b</td>
+<td>istore_0</td>
+<td>无</td>
+<td>将栈顶int类型值保存到局部变量0中</td>
+</tr>
+<tr>
+<td>0x60</td>
+<td>iadd</td>
+<td>无</td>
+<td>将栈顶两int类型数相加，结果入栈</td>
+</tr>
+<tr>
+<td>0xb2</td>
+<td>getstatic</td>
+<td>indexbyte1 indexbyte2</td>
+<td>获取静态字段的值</td>
+</tr>
+<tr>
+<td>0x84</td>
+<td>iinc</td>
+<td>indexbyte constbyte</td>
+<td>将整数值constbyte加到indexbyte指定的int类型的局部变量中</td>
+</tr>
+<tr>
+<td>0xb8</td>
+<td>invokestatic</td>
+<td>indexbyte1 indexbyte2</td>
+<td>调用静态方法</td>
+</tr>
+<tr>
+<td>0xb6</td>
+<td>invokevirtual</td>
+<td>indexbyte1 indexbyte2</td>
+<td>运行时方法绑定调用方法</td>
+</tr>
+</tbody></table>
+<h3 id="method1"><a href="#method1" class="headerlink" title="method1"></a>method1</h3><p>解释一下操作符：</p>
+<ul>
+<li>将常量0压入操作数栈</li>
+<li>将栈顶的int类型的数保存到局部变量表的第0个索引的位置</li>
+<li>从局部变量表的第0个索引的位置，将整数压入栈中</li>
+<li>将常量1压入操作数栈</li>
+<li>将栈顶的两个int类型数相加，将结果1压入操作数栈</li>
+<li>将结果1存储到局部变量的第0个索引的位置</li>
+<li>获取静态字段PrintStream的值</li>
+<li>将局部变量表第0个索引位置的值压入栈</li>
+<li>调用实例方法print输出结果</li>
+<li>方法结束返回</li>
+</ul>
+<h3 id="method2-method3-method4"><a href="#method2-method3-method4" class="headerlink" title="method2 method3 method4"></a>method2 method3 method4</h3><p>  我们可以看到剩下的三个方法的操作码是一致的,唯一不同的是操作码的执行顺序。而且多了一个新指令，该指令之后带有2个数值，分别是0和1，第一个参数是局部变量表的索引值，也就是说局部变量表第0索引处存放着一个int类型的值，第二个参数就是自增的大小，将索引0处的int值加1，得到结果。<strong>注意，这个操作是在局部变量表上操作的，而不是在操作数栈上。</strong></p>
+<p>  这时候我们看一下<code>i++</code>和<code>++i</code>的操作码，<code>i++</code>是先将局部变量表0处的值载入到操作数栈，然后才将局部变量表0处的值加1，接下来调用方法print的时候输出的是操作数栈的值，此时值为0，所以最终输出的结果就如我们所知一致，输出0。</p>
+<p>  <code>++i</code>的话就正好与<code>i++</code>相反先加1，然后将值载入操作数栈，再调用print方法输出，得到的结果当然是1。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>  其实，但从操作码来看，无论是<code>i++</code>还是<code>++i</code>还是<code>i+=1</code>的操作码的个数都是比i&#x3D;i+1少的，这样是不是可以说，前者的运行效率会高于后者呢？</p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>自增</tag>
+        <tag>豆知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>致两年后的自己</title>
+    <url>/2018/02/05/2018-2-5-%E8%87%B4%E4%B8%A4%E5%B9%B4%E5%90%8E%E7%9A%84%E8%87%AA%E5%B7%B1/</url>
+    <content><![CDATA[<p>喂，你好，两年后的自己。我是两年前的你，现在的你过的还好么？你是留在了日本，还是回到了祖国？你是否还保持着自己内心的梦想？世间最可怕的事情莫过于一个人被时间磨平了自己内心的棱角，失去了内心对拒绝平庸的那股挣扎。作为昨日的你，我一直在为未来的你做着各种而样的准备。一个人的一生如果就这么平平淡淡的度过了，是不是会让人内心有些难过。人生在世，终究还是能为世界留下点什么为好。即使自己终将落地归土，也许会给世界带来一点不同。</p>
+<p>现在的你可能已经回到了自己的祖国，从头开始一步步发展；亦或许自己与伙伴们一起拥有了自己的容身之地；或者你还是留在了日本继续发展。但是，无论如何，你做了何种选择，我都会支持你。毕竟，我就是你，过去的你；你就是我，未来的我。更甚者，你也许过的并不如意，但是，即使如此，我也希望你仍旧保持着内心的拒绝，绝不屈服！</p>
+<p>也许你会担心为何24岁的自己仍旧一事无成，但是比起一事无成，我更希望你是因为不断的前进而伤痕累累，而不是在每一孤独的夜晚胡划一根火柴，幻想成功的自己。记住！姜子牙老爷子，重耳他们都是大事完成，虽然我们的智慧和才能并不能与它们相比，但是如先辈此等才干尚且需要隐忍与努力，何况我们呢。你觉得呢未来的自己？</p>
+<p>在你最终步入30岁之前，你需要做的，也许就是不断的为了拒绝平庸而前进，不管最终的结果如何。至于是否能成功，那就成事在人，谋事在天吧！有时候，运气也是一个人的实力的一部分。</p>
+<p>另外，别忘了，多读书，读书不仅是为了学习丰富的知识、拓宽自己的视野，而且她也能使一个人更加的成熟，富有内涵。想想一下，一个充满阳光的下午，你坐在桌子前，一边喝着淡淡的茶香，一边读着盛满智慧的阶梯，岂不美哉？</p>
+<p>恩，虽然有点突兀，也许是有点跑题，亦或许是穿越时间的隧道即将关闭，我想最后用一句诗来表达我自己对你的祝福，也是对我过去的你的嘱托与叮嘱：</p>
+<p>封侯非我意，但愿海波平~</p>
+<p>时间：2018年2月5日23:44:15</p>
+<p>写于一个人在东京寂静的夜晚。——by 梦梦的幻想乡</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>致未来的自己</tag>
+        <tag>梦梦的幻想乡</tag>
+        <tag>拒绝平庸</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于AWS云平台的数据出力项目2023-12~2024-08</title>
+    <url>/2024/07/26/2024-07-26-%E5%9F%BA%E4%BA%8EAWS%E4%BA%91%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E9%A1%B9%E7%9B%AE2023-12~2024-08/</url>
+    <content><![CDATA[<h1 id="基于AWS云平台的数据出力项目-2023-12-2024-08"><a href="#基于AWS云平台的数据出力项目-2023-12-2024-08" class="headerlink" title="基于AWS云平台的数据出力项目(2023-12~2024-08)"></a>基于AWS云平台的数据出力项目(2023-12~2024-08)</h1><h2 id="项目情况概述"><a href="#项目情况概述" class="headerlink" title="项目情况概述"></a>项目情况概述</h2><h3 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h3><ol>
+<li><p>该项目总结下来基本只需要做两件事情，将数据从桶里导入表中，或者将表里的数据导出到数据库，除了极个别业务逻辑比较复杂的模块，或者数据量比较大模块之外，大多数时候不太需要思考</p>
+</li>
+<li><p>基于AWS平台，使用了Lambda（函数，主要处理逻辑）、S3（存储，实例对象叫做Bucket）</p>
+</li>
+<li><p>使用到的编程语言有两种Python和TypeScript，对语言的要求级别不高，只要有过经验就能胜任，需要一定的编程经验来解决项目中出现的各种问题</p>
+</li>
+<li><p>使用到的数据库是MySQL，因为该项目经常会有单表的数据过百万，千万，甚至亿级别程度，需要会编写一些较为复杂的SQL语句，以及一些优化技巧，比如索引，分表等</p>
+</li>
+<li><p>对于Lambda使用方式，本项目主要是用到了两种，一种是通过Scheduler（定时任务，根据你设定的时间来执行），另一种方式是通过触发器，通过对某个桶设置监听指定的文件前缀，当该桶有文件被放入，就会触发。</p>
+</li>
+</ol>
+<h3 id="项目管理相关"><a href="#项目管理相关" class="headerlink" title="项目管理相关"></a>项目管理相关</h3><ol start="6">
+<li><p>使用到版本管理工具是Git，分支量很大，需要经常合并分支，解决冲突，有过相关经验即可</p>
+</li>
+<li><p>使用SVN来管理文档，SVN管理文档相对方便，也不是很需要太精细的操作</p>
+</li>
+<li><p>因为项目的式样书大部分情况都是和开发并行，所以开发相对自由，只要符合机能需求即可，但是经常因为需求不确定，发生回炉重造的问题</p>
+</li>
+<li><p>部署有自动化，但是经常需要有人熬夜查看是否出现问题，一旦出现问题，整个部署过程就会停止</p>
+</li>
+<li><p>项目团队比较垂直，沟通比较方便（开发团队），不需要经常开那种无用的早会晚会。</p>
+</li>
+<li><p>使用Backlog来管理项目的WIKI，问题票之类的，类似Redmine，不过界面更加友好一些。</p>
+</li>
+</ol>
+<h2 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h2><ol>
+<li>对于数据库大数据的优化，比如索引方面有了一定实践上的收获，以前这方面经验较少，大部分的项目数据量较少，不需要考虑数据方面的问题，即使考虑了也只需要按照式样建索引，优化的效果不太明显，再者对日项目做到优化的阶段基本处于后期，这种时候一般就不在项目中了。※（这是很重要的经验）</li>
+<li>对于AWS的使用有了一定经验。</li>
+<li>日语方面基本没有长进，该项目只需要简单的书面用语即可。</li>
+<li>技术方面长进可忽略，除了数据库之外，单纯是熟悉了一遍Python的语法。</li>
+<li>做对日亘古不变的道理是如果有问题那就一定要问清楚，再开始着手。</li>
+</ol>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>总体来说是一个对成长有一点帮助，相对比较自由的项目，这是第一次写这种类型的总结，要以真实为第一要义，毕竟是写给自己看的，不要拘泥于形式，通过坐下来冷静的思考，反省，来总结自己在这个项目中的得与失，以此来警醒自己，需要时时勤拂拭。</p>
+<p><em>写于<br>2024.07.26<br>一个阴天的下午<br>——by 三页半</em></p>
+]]></content>
+      <categories>
+        <category>项目总结</category>
+      </categories>
+      <tags>
+        <tag>项目总结</tag>
+        <tag>AWS</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+</search>
