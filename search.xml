@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld</title>
-    <url>/2016/11/07/2016-11-07-HelloWorld/</url>
-    <content><![CDATA[<ul>
-<li>Chinese 你好世界</li>
-<li>English HelloWorld</li>
-<li>Japanese こんにちは世界</li>
-</ul>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>HelloWorld</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于编程语言的一些个人思考</title>
     <url>/2018/01/19/2018-1-19-%E5%85%B3%E4%BA%8E%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>近日读松本行弘的《代码的未来》略有感触，随有此记。</p>
@@ -40,6 +24,235 @@
         <tag>编程语言</tag>
         <tag>代码的未来</tag>
         <tag>go语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HelloWorld</title>
+    <url>/2016/11/07/2016-11-07-HelloWorld/</url>
+    <content><![CDATA[<ul>
+<li>Chinese 你好世界</li>
+<li>English HelloWorld</li>
+<li>Japanese こんにちは世界</li>
+</ul>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>HelloWorld</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim常用命令</title>
+    <url>/2018/01/24/2018-1-24-Vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h,j,k,l</td>
+<td>左下上右</td>
+</tr>
+<tr>
+<td>^</td>
+<td>光标所在行的开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>光标所在行的结尾</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>文档的第一行</td>
+</tr>
+<tr>
+<td>[N]G</td>
+<td>输入数字+G跳转到文档的第N行，或者直接输入G会跳转到文档的最后一行</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>复制光标所在的一整行</td>
+</tr>
+<tr>
+<td>[N]yy</td>
+<td>复制从光标开始的N行</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>删除(剪切)光标所在的行</td>
+</tr>
+<tr>
+<td>[N]dd</td>
+<td>删除(剪切)光标开始的N行</td>
+</tr>
+<tr>
+<td>p</td>
+<td>将之前删除或者复制过的数据粘贴到光标后</td>
+</tr>
+<tr>
+<td>&#x2F;[str]</td>
+<td>从上到下搜索指定的字符串</td>
+</tr>
+<tr>
+<td>?[str]</td>
+<td>从下到上搜索指定的字符串</td>
+</tr>
+<tr>
+<td>u</td>
+<td>撤销上一步操作</td>
+</tr>
+<tr>
+<td>i</td>
+<td>进入插入模式，在光标前插入字符</td>
+</tr>
+<tr>
+<td>a</td>
+<td>进入插入模式，在光标后插入字符</td>
+</tr>
+<tr>
+<td>o</td>
+<td>在新的一行插入字符</td>
+</tr>
+</tbody></table>
+<h2 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:w</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>:q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>强制退出，放弃对文本的修改</td>
+</tr>
+<tr>
+<td>:wq!</td>
+<td>强制保存退出</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>保存退出</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Apache相关知识</title>
+    <url>/2018/01/24/2018-1-24-Apache%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="Apache目录结构"><a href="#Apache目录结构" class="headerlink" title="Apache目录结构"></a>Apache目录结构</h2><table>
+<thead>
+<tr>
+<th>目录名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bin</td>
+<td>可执行文件</td>
+</tr>
+<tr>
+<td>conf</td>
+<td>配置文件</td>
+</tr>
+<tr>
+<td>htdoce</td>
+<td>缺省的网站根目录</td>
+</tr>
+<tr>
+<td>include</td>
+<td>头文件</td>
+</tr>
+<tr>
+<td>logs</td>
+<td>日志</td>
+</tr>
+<tr>
+<td>man</td>
+<td>手册</td>
+</tr>
+<tr>
+<td>manual</td>
+<td>联机文档</td>
+</tr>
+<tr>
+<td>modules</td>
+<td>存放一些编译好的软件</td>
+</tr>
+</tbody></table>
+<h2 id="Apache-httpd-conf部分配置"><a href="#Apache-httpd-conf部分配置" class="headerlink" title="Apache httpd.conf部分配置"></a>Apache httpd.conf部分配置</h2><table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ServerRoot</td>
+<td>服务器根目录（不是Web根目录）</td>
+</tr>
+<tr>
+<td>Listen</td>
+<td>监听的接口</td>
+</tr>
+<tr>
+<td>DirectoryIndex</td>
+<td>默认的索引页面</td>
+</tr>
+<tr>
+<td>User</td>
+<td>运行服务的用户</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>运行服务的用户组</td>
+</tr>
+<tr>
+<td>ServerName</td>
+<td>网站的服务器域名</td>
+</tr>
+<tr>
+<td>ServerAdmin</td>
+<td>管理员邮箱地址</td>
+</tr>
+<tr>
+<td>CustomLog</td>
+<td>记录访问日志的文件地址</td>
+</tr>
+<tr>
+<td>ErrorLog</td>
+<td>记录错误日志的文件地址</td>
+</tr>
+<tr>
+<td>DocumentRoot</td>
+<td>网站数据目录</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+        <tag>Apache</tag>
       </tags>
   </entry>
   <entry>
@@ -162,6 +375,138 @@
       </tags>
   </entry>
   <entry>
+    <title>关于Java4种自增方法的不同</title>
+    <url>/2018/10/10/2018-10-10-Java%E8%87%AA%E5%A2%9E%E6%96%B9%E6%B3%95%E7%9A%84%E8%A7%A3%E6%9E%90/</url>
+    <content><![CDATA[<h2 id="4种自增的方法"><a href="#4种自增的方法" class="headerlink" title="4种自增的方法"></a>4种自增的方法</h2><ul>
+<li>i++</li>
+<li>++i</li>
+<li>i+&#x3D;1</li>
+<li>i&#x3D;i+1</li>
+</ul>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		method1();<span class="comment">// i=i+1</span></span><br><span class="line">		method2();<span class="comment">// i+=1</span></span><br><span class="line">		method3();<span class="comment">// i++</span></span><br><span class="line">		method4();<span class="comment">// ++i</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i = i + <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i += <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i++);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(++i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure></div>
+<h2 id="解释说明"><a href="#解释说明" class="headerlink" title="解释说明"></a>解释说明</h2><ul>
+<li>第一种<code>i=i+1</code>:首先<code>=</code>的优先级小于<code>+</code>，所以该表达式会首先进行加法操作，然后再进行赋值操作</li>
+<li>第二种<code>i+=1</code>:第一种方法的优化版本？;</li>
+<li>第三种<code>i++</code>:先参与操作，后自增</li>
+<li>第四种<code>++i</code>:先自增，后参与操作</li>
+</ul>
+<p>以上都是大家都熟知的想法</p>
+<h2 id="从字节码的角度"><a href="#从字节码的角度" class="headerlink" title="从字节码的角度"></a>从字节码的角度</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Compiled from <span class="string">&quot;HelloWorld.java&quot;</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">HelloWorld</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: aload_0</span><br><span class="line">       <span class="number">1</span>: invokespecial #<span class="number">1</span>                  <span class="comment">// Method java/lang/Object.&quot;&lt;init&gt;&quot;:()V</span></span><br><span class="line">       <span class="number">4</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(java.lang.String[])</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: invokestatic  #<span class="number">2</span>                  <span class="comment">// Method method1:()V</span></span><br><span class="line">       <span class="number">3</span>: invokestatic  #<span class="number">3</span>                  <span class="comment">// Method method2:()V</span></span><br><span class="line">       <span class="number">6</span>: invokestatic  #<span class="number">4</span>                  <span class="comment">// Method method3:()V</span></span><br><span class="line">       <span class="number">9</span>: invokestatic  #<span class="number">5</span>                  <span class="comment">// Method method4:()V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iload_0</span><br><span class="line">       <span class="number">3</span>: iconst_1</span><br><span class="line">       <span class="number">4</span>: iadd</span><br><span class="line">       <span class="number">5</span>: istore_0</span><br><span class="line">       <span class="number">6</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">9</span>: iload_0</span><br><span class="line">      <span class="number">10</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">13</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">5</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iload_0</span><br><span class="line">       <span class="number">6</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<table>
+<thead>
+<tr>
+<th>指令码</th>
+<th>操作码（助记符）</th>
+<th>操作数</th>
+<th>描述（栈指操作数栈）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x03</td>
+<td>iconst_0</td>
+<td>无</td>
+<td>0(int)值入栈</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>iconst_1</td>
+<td>无</td>
+<td>1(int)值入栈</td>
+</tr>
+<tr>
+<td>0x1a</td>
+<td>iload_0</td>
+<td>无</td>
+<td>从局部变量0中装载int类型值入栈</td>
+</tr>
+<tr>
+<td>0x3b</td>
+<td>istore_0</td>
+<td>无</td>
+<td>将栈顶int类型值保存到局部变量0中</td>
+</tr>
+<tr>
+<td>0x60</td>
+<td>iadd</td>
+<td>无</td>
+<td>将栈顶两int类型数相加，结果入栈</td>
+</tr>
+<tr>
+<td>0xb2</td>
+<td>getstatic</td>
+<td>indexbyte1 indexbyte2</td>
+<td>获取静态字段的值</td>
+</tr>
+<tr>
+<td>0x84</td>
+<td>iinc</td>
+<td>indexbyte constbyte</td>
+<td>将整数值constbyte加到indexbyte指定的int类型的局部变量中</td>
+</tr>
+<tr>
+<td>0xb8</td>
+<td>invokestatic</td>
+<td>indexbyte1 indexbyte2</td>
+<td>调用静态方法</td>
+</tr>
+<tr>
+<td>0xb6</td>
+<td>invokevirtual</td>
+<td>indexbyte1 indexbyte2</td>
+<td>运行时方法绑定调用方法</td>
+</tr>
+</tbody></table>
+<h3 id="method1"><a href="#method1" class="headerlink" title="method1"></a>method1</h3><p>解释一下操作符：</p>
+<ul>
+<li>将常量0压入操作数栈</li>
+<li>将栈顶的int类型的数保存到局部变量表的第0个索引的位置</li>
+<li>从局部变量表的第0个索引的位置，将整数压入栈中</li>
+<li>将常量1压入操作数栈</li>
+<li>将栈顶的两个int类型数相加，将结果1压入操作数栈</li>
+<li>将结果1存储到局部变量的第0个索引的位置</li>
+<li>获取静态字段PrintStream的值</li>
+<li>将局部变量表第0个索引位置的值压入栈</li>
+<li>调用实例方法print输出结果</li>
+<li>方法结束返回</li>
+</ul>
+<h3 id="method2-method3-method4"><a href="#method2-method3-method4" class="headerlink" title="method2 method3 method4"></a>method2 method3 method4</h3><p>  我们可以看到剩下的三个方法的操作码是一致的,唯一不同的是操作码的执行顺序。而且多了一个新指令，该指令之后带有2个数值，分别是0和1，第一个参数是局部变量表的索引值，也就是说局部变量表第0索引处存放着一个int类型的值，第二个参数就是自增的大小，将索引0处的int值加1，得到结果。<strong>注意，这个操作是在局部变量表上操作的，而不是在操作数栈上。</strong></p>
+<p>  这时候我们看一下<code>i++</code>和<code>++i</code>的操作码，<code>i++</code>是先将局部变量表0处的值载入到操作数栈，然后才将局部变量表0处的值加1，接下来调用方法print的时候输出的是操作数栈的值，此时值为0，所以最终输出的结果就如我们所知一致，输出0。</p>
+<p>  <code>++i</code>的话就正好与<code>i++</code>相反先加1，然后将值载入操作数栈，再调用print方法输出，得到的结果当然是1。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>  其实，但从操作码来看，无论是<code>i++</code>还是<code>++i</code>还是<code>i+=1</code>的操作码的个数都是比i&#x3D;i+1少的，这样是不是可以说，前者的运行效率会高于后者呢？</p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>自增</tag>
+        <tag>豆知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>致两年后的自己</title>
+    <url>/2018/02/05/2018-2-5-%E8%87%B4%E4%B8%A4%E5%B9%B4%E5%90%8E%E7%9A%84%E8%87%AA%E5%B7%B1/</url>
+    <content><![CDATA[<p>喂，你好，两年后的自己。我是两年前的你，现在的你过的还好么？你是留在了日本，还是回到了祖国？你是否还保持着自己内心的梦想？世间最可怕的事情莫过于一个人被时间磨平了自己内心的棱角，失去了内心对拒绝平庸的那股挣扎。作为昨日的你，我一直在为未来的你做着各种而样的准备。一个人的一生如果就这么平平淡淡的度过了，是不是会让人内心有些难过。人生在世，终究还是能为世界留下点什么为好。即使自己终将落地归土，也许会给世界带来一点不同。</p>
+<p>现在的你可能已经回到了自己的祖国，从头开始一步步发展；亦或许自己与伙伴们一起拥有了自己的容身之地；或者你还是留在了日本继续发展。但是，无论如何，你做了何种选择，我都会支持你。毕竟，我就是你，过去的你；你就是我，未来的我。更甚者，你也许过的并不如意，但是，即使如此，我也希望你仍旧保持着内心的拒绝，绝不屈服！</p>
+<p>也许你会担心为何24岁的自己仍旧一事无成，但是比起一事无成，我更希望你是因为不断的前进而伤痕累累，而不是在每一孤独的夜晚胡划一根火柴，幻想成功的自己。记住！姜子牙老爷子，重耳他们都是大事完成，虽然我们的智慧和才能并不能与它们相比，但是如先辈此等才干尚且需要隐忍与努力，何况我们呢。你觉得呢未来的自己？</p>
+<p>在你最终步入30岁之前，你需要做的，也许就是不断的为了拒绝平庸而前进，不管最终的结果如何。至于是否能成功，那就成事在人，谋事在天吧！有时候，运气也是一个人的实力的一部分。</p>
+<p>另外，别忘了，多读书，读书不仅是为了学习丰富的知识、拓宽自己的视野，而且她也能使一个人更加的成熟，富有内涵。想想一下，一个充满阳光的下午，你坐在桌子前，一边喝着淡淡的茶香，一边读着盛满智慧的阶梯，岂不美哉？</p>
+<p>恩，虽然有点突兀，也许是有点跑题，亦或许是穿越时间的隧道即将关闭，我想最后用一句诗来表达我自己对你的祝福，也是对我过去的你的嘱托与叮嘱：</p>
+<p>封侯非我意，但愿海波平~</p>
+<p>时间：2018年2月5日23:44:15</p>
+<p>写于一个人在东京寂静的夜晚。——by 梦梦的幻想乡</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>致未来的自己</tag>
+        <tag>梦梦的幻想乡</tag>
+        <tag>拒绝平庸</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LVM(Logical Volume Manager)逻辑卷管理器</title>
     <url>/2018/01/24/2018-1-24-LVM(Logical%20Volume%20Manager)%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<h2 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h2><table>
@@ -245,103 +590,64 @@
       </tags>
   </entry>
   <entry>
-    <title>Apache相关知识</title>
-    <url>/2018/01/24/2018-1-24-Apache%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="Apache目录结构"><a href="#Apache目录结构" class="headerlink" title="Apache目录结构"></a>Apache目录结构</h2><table>
-<thead>
-<tr>
-<th>目录名称</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>bin</td>
-<td>可执行文件</td>
-</tr>
-<tr>
-<td>conf</td>
-<td>配置文件</td>
-</tr>
-<tr>
-<td>htdoce</td>
-<td>缺省的网站根目录</td>
-</tr>
-<tr>
-<td>include</td>
-<td>头文件</td>
-</tr>
-<tr>
-<td>logs</td>
-<td>日志</td>
-</tr>
-<tr>
-<td>man</td>
-<td>手册</td>
-</tr>
-<tr>
-<td>manual</td>
-<td>联机文档</td>
-</tr>
-<tr>
-<td>modules</td>
-<td>存放一些编译好的软件</td>
-</tr>
-</tbody></table>
-<h2 id="Apache-httpd-conf部分配置"><a href="#Apache-httpd-conf部分配置" class="headerlink" title="Apache httpd.conf部分配置"></a>Apache httpd.conf部分配置</h2><table>
-<thead>
-<tr>
-<th>变量名称</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ServerRoot</td>
-<td>服务器根目录（不是Web根目录）</td>
-</tr>
-<tr>
-<td>Listen</td>
-<td>监听的接口</td>
-</tr>
-<tr>
-<td>DirectoryIndex</td>
-<td>默认的索引页面</td>
-</tr>
-<tr>
-<td>User</td>
-<td>运行服务的用户</td>
-</tr>
-<tr>
-<td>Group</td>
-<td>运行服务的用户组</td>
-</tr>
-<tr>
-<td>ServerName</td>
-<td>网站的服务器域名</td>
-</tr>
-<tr>
-<td>ServerAdmin</td>
-<td>管理员邮箱地址</td>
-</tr>
-<tr>
-<td>CustomLog</td>
-<td>记录访问日志的文件地址</td>
-</tr>
-<tr>
-<td>ErrorLog</td>
-<td>记录错误日志的文件地址</td>
-</tr>
-<tr>
-<td>DocumentRoot</td>
-<td>网站数据目录</td>
-</tr>
-</tbody></table>
+    <title>Intellij_Idea关于properties编码问题</title>
+    <url>/2018/01/25/2018-1-25-Intellij_Idea%E5%85%B3%E4%BA%8Eproperties%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>测试代码</li>
+</ul>
+<p>测试源代码</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PropertiesTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testLanguage</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">ResourceBundle</span> <span class="variable">bundle</span> <span class="operator">=</span> ResourceBundle.getBundle(<span class="string">&quot;globalMessages_zh_CN&quot;</span>);</span><br><span class="line">        Assert.assertEquals(<span class="string">&quot;用户名&quot;</span>, bundle.getString(<span class="string">&quot;username&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>测试properties(格式是UTF-8)</p>
+<div class="highlight-container" data-rel="Properties"><figure class="iseeu highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">check</span>=<span class="string">请选择语言</span></span><br><span class="line"><span class="attr">chinese</span>=<span class="string">中文</span></span><br><span class="line"><span class="attr">english</span>=<span class="string">英文</span></span><br><span class="line"><span class="attr">login</span>=<span class="string">登录</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">密码</span></span><br><span class="line"><span class="attr">title</span>=<span class="string">欢迎来到本站</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">用户名</span></span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>测试结果</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/Intellij-Idea/luanma.png"
+                      alt="乱码"
+                ></p>
+<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>在笔者使用properties配置文件做国际化的时候，遇到了一个很常见的问题，properties文件中的中文在前台读取到之后，就变成了乱码。前台页面显示乱码的原因在笔者所接触的范围内大概有两个，一个是前台的JSP页面设置的编码格式不正确，这里具体指如下两个变量:</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">pageEncoding=<span class="string">&quot;UTF-8&quot;</span> </span><br><span class="line">contentType=<span class="string">&quot;text/html; UTF-8&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>这两个变量如果设置了与浏览器格式不相符的编码格式可能会造成问题,当然这两个变量之间也有区别：</p>
+<ul>
+<li><p>pageEncoding是jsp文件本身的编码</p>
+</li>
+<li><p>contentType的charset是指服务器发送给客户端时的内容编码</p>
+</li>
+</ul>
+<p>这第二个原因就是properties本身文件的编码格式与前台不匹配。比如说properties文件是GBK，而前台（浏览器）是UTF-8,就会造成乱码问题。然而，笔者的Intelij Idea文件编码设置有确实是UTF-8</p>
+<ul>
+<li>Intellij Idea 文件编码设置界面</li>
+</ul>
+<p>File-&gt;Settings-&gt;Editor-&gt;File Encodings</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/Intellij-Idea/intellijidea-file-encoding-setting.png"
+                      alt="编码设置"
+                ></p>
+<p>至于这里为何即使采用UTF-8也会出现乱码，网上一说是由于Java解析properties文件是采用字节流读取，所以导致了会将汉字根据字节流读取，具体笔者也没有仔细去深究。_(:з)∠)_</p>
+<p>这里提供如下解决方法：</p>
+<p>解决方法的原则就是在properties中使用unicode来表示中文</p>
+<ul>
+<li><p>如果你是使用的是Intellij Idea。打开如上图所示编码设置的文件，在Transparent native-to-ascii conversion选择框上点上对号即可。Intellij Idea 会在你输入中文的时候自动将它转成Unicode格式，同时你看到的仍然是中文（当你把刚才点上的对号取消后就可以看到Unicode了），另外需要注意的一点是，如果你在选项没有点上对号的时候输入中文的话，解析出来仍然是乱码。</p>
+</li>
+<li><p>如果你是其他IDE或者工具的用户，可以选择使用jdk自带的工具native2ascii.exe，该文件在jdk的bin目录中，使用方式请自行google。</p>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>运维</category>
+        <category>Intellij-Idea</category>
       </categories>
       <tags>
-        <tag>运维</tag>
-        <tag>Apache</tag>
+        <tag>Intellij-Idea</tag>
+        <tag>properties</tag>
+        <tag>乱码</tag>
       </tags>
   </entry>
   <entry>
@@ -454,312 +760,6 @@
         <tag>运维</tag>
         <tag>Apache</tag>
         <tag>CentOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Java4种自增方法的不同</title>
-    <url>/2018/10/10/2018-10-10-Java%E8%87%AA%E5%A2%9E%E6%96%B9%E6%B3%95%E7%9A%84%E8%A7%A3%E6%9E%90/</url>
-    <content><![CDATA[<h2 id="4种自增的方法"><a href="#4种自增的方法" class="headerlink" title="4种自增的方法"></a>4种自增的方法</h2><ul>
-<li>i++</li>
-<li>++i</li>
-<li>i+&#x3D;1</li>
-<li>i&#x3D;i+1</li>
-</ul>
-<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		method1();<span class="comment">// i=i+1</span></span><br><span class="line">		method2();<span class="comment">// i+=1</span></span><br><span class="line">		method3();<span class="comment">// i++</span></span><br><span class="line">		method4();<span class="comment">// ++i</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i = i + <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i += <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(i++);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		System.out.println(++i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure></div>
-<h2 id="解释说明"><a href="#解释说明" class="headerlink" title="解释说明"></a>解释说明</h2><ul>
-<li>第一种<code>i=i+1</code>:首先<code>=</code>的优先级小于<code>+</code>，所以该表达式会首先进行加法操作，然后再进行赋值操作</li>
-<li>第二种<code>i+=1</code>:第一种方法的优化版本？;</li>
-<li>第三种<code>i++</code>:先参与操作，后自增</li>
-<li>第四种<code>++i</code>:先自增，后参与操作</li>
-</ul>
-<p>以上都是大家都熟知的想法</p>
-<h2 id="从字节码的角度"><a href="#从字节码的角度" class="headerlink" title="从字节码的角度"></a>从字节码的角度</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Compiled from <span class="string">&quot;HelloWorld.java&quot;</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">HelloWorld</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: aload_0</span><br><span class="line">       <span class="number">1</span>: invokespecial #<span class="number">1</span>                  <span class="comment">// Method java/lang/Object.&quot;&lt;init&gt;&quot;:()V</span></span><br><span class="line">       <span class="number">4</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(java.lang.String[])</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: invokestatic  #<span class="number">2</span>                  <span class="comment">// Method method1:()V</span></span><br><span class="line">       <span class="number">3</span>: invokestatic  #<span class="number">3</span>                  <span class="comment">// Method method2:()V</span></span><br><span class="line">       <span class="number">6</span>: invokestatic  #<span class="number">4</span>                  <span class="comment">// Method method3:()V</span></span><br><span class="line">       <span class="number">9</span>: invokestatic  #<span class="number">5</span>                  <span class="comment">// Method method4:()V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method1</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iload_0</span><br><span class="line">       <span class="number">3</span>: iconst_1</span><br><span class="line">       <span class="number">4</span>: iadd</span><br><span class="line">       <span class="number">5</span>: istore_0</span><br><span class="line">       <span class="number">6</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">9</span>: iload_0</span><br><span class="line">      <span class="number">10</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">13</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method2</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">5</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method3</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iload_0</span><br><span class="line">       <span class="number">6</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method4</span><span class="params">()</span>;</span><br><span class="line">    Code:</span><br><span class="line">       <span class="number">0</span>: iconst_0</span><br><span class="line">       <span class="number">1</span>: istore_0</span><br><span class="line">       <span class="number">2</span>: getstatic     #<span class="number">6</span>                  <span class="comment">// Field java/lang/System.out:Ljava/io/PrintStream;</span></span><br><span class="line">       <span class="number">5</span>: iinc          <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">       <span class="number">8</span>: iload_0</span><br><span class="line">       <span class="number">9</span>: invokevirtual #<span class="number">7</span>                  <span class="comment">// Method java/io/PrintStream.println:(I)V</span></span><br><span class="line">      <span class="number">12</span>: <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<table>
-<thead>
-<tr>
-<th>指令码</th>
-<th>操作码（助记符）</th>
-<th>操作数</th>
-<th>描述（栈指操作数栈）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0x03</td>
-<td>iconst_0</td>
-<td>无</td>
-<td>0(int)值入栈</td>
-</tr>
-<tr>
-<td>0x04</td>
-<td>iconst_1</td>
-<td>无</td>
-<td>1(int)值入栈</td>
-</tr>
-<tr>
-<td>0x1a</td>
-<td>iload_0</td>
-<td>无</td>
-<td>从局部变量0中装载int类型值入栈</td>
-</tr>
-<tr>
-<td>0x3b</td>
-<td>istore_0</td>
-<td>无</td>
-<td>将栈顶int类型值保存到局部变量0中</td>
-</tr>
-<tr>
-<td>0x60</td>
-<td>iadd</td>
-<td>无</td>
-<td>将栈顶两int类型数相加，结果入栈</td>
-</tr>
-<tr>
-<td>0xb2</td>
-<td>getstatic</td>
-<td>indexbyte1 indexbyte2</td>
-<td>获取静态字段的值</td>
-</tr>
-<tr>
-<td>0x84</td>
-<td>iinc</td>
-<td>indexbyte constbyte</td>
-<td>将整数值constbyte加到indexbyte指定的int类型的局部变量中</td>
-</tr>
-<tr>
-<td>0xb8</td>
-<td>invokestatic</td>
-<td>indexbyte1 indexbyte2</td>
-<td>调用静态方法</td>
-</tr>
-<tr>
-<td>0xb6</td>
-<td>invokevirtual</td>
-<td>indexbyte1 indexbyte2</td>
-<td>运行时方法绑定调用方法</td>
-</tr>
-</tbody></table>
-<h3 id="method1"><a href="#method1" class="headerlink" title="method1"></a>method1</h3><p>解释一下操作符：</p>
-<ul>
-<li>将常量0压入操作数栈</li>
-<li>将栈顶的int类型的数保存到局部变量表的第0个索引的位置</li>
-<li>从局部变量表的第0个索引的位置，将整数压入栈中</li>
-<li>将常量1压入操作数栈</li>
-<li>将栈顶的两个int类型数相加，将结果1压入操作数栈</li>
-<li>将结果1存储到局部变量的第0个索引的位置</li>
-<li>获取静态字段PrintStream的值</li>
-<li>将局部变量表第0个索引位置的值压入栈</li>
-<li>调用实例方法print输出结果</li>
-<li>方法结束返回</li>
-</ul>
-<h3 id="method2-method3-method4"><a href="#method2-method3-method4" class="headerlink" title="method2 method3 method4"></a>method2 method3 method4</h3><p>  我们可以看到剩下的三个方法的操作码是一致的,唯一不同的是操作码的执行顺序。而且多了一个新指令，该指令之后带有2个数值，分别是0和1，第一个参数是局部变量表的索引值，也就是说局部变量表第0索引处存放着一个int类型的值，第二个参数就是自增的大小，将索引0处的int值加1，得到结果。<strong>注意，这个操作是在局部变量表上操作的，而不是在操作数栈上。</strong></p>
-<p>  这时候我们看一下<code>i++</code>和<code>++i</code>的操作码，<code>i++</code>是先将局部变量表0处的值载入到操作数栈，然后才将局部变量表0处的值加1，接下来调用方法print的时候输出的是操作数栈的值，此时值为0，所以最终输出的结果就如我们所知一致，输出0。</p>
-<p>  <code>++i</code>的话就正好与<code>i++</code>相反先加1，然后将值载入操作数栈，再调用print方法输出，得到的结果当然是1。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>  其实，但从操作码来看，无论是<code>i++</code>还是<code>++i</code>还是<code>i+=1</code>的操作码的个数都是比i&#x3D;i+1少的，这样是不是可以说，前者的运行效率会高于后者呢？</p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>自增</tag>
-        <tag>豆知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim常用命令</title>
-    <url>/2018/01/24/2018-1-24-Vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>h,j,k,l</td>
-<td>左下上右</td>
-</tr>
-<tr>
-<td>^</td>
-<td>光标所在行的开始</td>
-</tr>
-<tr>
-<td>$</td>
-<td>光标所在行的结尾</td>
-</tr>
-<tr>
-<td>gg</td>
-<td>文档的第一行</td>
-</tr>
-<tr>
-<td>[N]G</td>
-<td>输入数字+G跳转到文档的第N行，或者直接输入G会跳转到文档的最后一行</td>
-</tr>
-<tr>
-<td>yy</td>
-<td>复制光标所在的一整行</td>
-</tr>
-<tr>
-<td>[N]yy</td>
-<td>复制从光标开始的N行</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>删除(剪切)光标所在的行</td>
-</tr>
-<tr>
-<td>[N]dd</td>
-<td>删除(剪切)光标开始的N行</td>
-</tr>
-<tr>
-<td>p</td>
-<td>将之前删除或者复制过的数据粘贴到光标后</td>
-</tr>
-<tr>
-<td>&#x2F;[str]</td>
-<td>从上到下搜索指定的字符串</td>
-</tr>
-<tr>
-<td>?[str]</td>
-<td>从下到上搜索指定的字符串</td>
-</tr>
-<tr>
-<td>u</td>
-<td>撤销上一步操作</td>
-</tr>
-<tr>
-<td>i</td>
-<td>进入插入模式，在光标前插入字符</td>
-</tr>
-<tr>
-<td>a</td>
-<td>进入插入模式，在光标后插入字符</td>
-</tr>
-<tr>
-<td>o</td>
-<td>在新的一行插入字符</td>
-</tr>
-</tbody></table>
-<h2 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>:w</td>
-<td>保存</td>
-</tr>
-<tr>
-<td>:q</td>
-<td>退出</td>
-</tr>
-<tr>
-<td>:q!</td>
-<td>强制退出，放弃对文本的修改</td>
-</tr>
-<tr>
-<td>:wq!</td>
-<td>强制保存退出</td>
-</tr>
-<tr>
-<td>:wq</td>
-<td>保存退出</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>运维</category>
-      </categories>
-      <tags>
-        <tag>运维</tag>
-        <tag>Linux</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Intellij_Idea关于properties编码问题</title>
-    <url>/2018/01/25/2018-1-25-Intellij_Idea%E5%85%B3%E4%BA%8Eproperties%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
-<li>测试代码</li>
-</ul>
-<p>测试源代码</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PropertiesTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testLanguage</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">ResourceBundle</span> <span class="variable">bundle</span> <span class="operator">=</span> ResourceBundle.getBundle(<span class="string">&quot;globalMessages_zh_CN&quot;</span>);</span><br><span class="line">        Assert.assertEquals(<span class="string">&quot;用户名&quot;</span>, bundle.getString(<span class="string">&quot;username&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<p>测试properties(格式是UTF-8)</p>
-<div class="highlight-container" data-rel="Properties"><figure class="iseeu highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">check</span>=<span class="string">请选择语言</span></span><br><span class="line"><span class="attr">chinese</span>=<span class="string">中文</span></span><br><span class="line"><span class="attr">english</span>=<span class="string">英文</span></span><br><span class="line"><span class="attr">login</span>=<span class="string">登录</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">密码</span></span><br><span class="line"><span class="attr">title</span>=<span class="string">欢迎来到本站</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">用户名</span></span><br></pre></td></tr></table></figure></div>
-
-<ul>
-<li>测试结果</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/img/Intellij-Idea/luanma.png"
-                      alt="乱码"
-                ></p>
-<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>在笔者使用properties配置文件做国际化的时候，遇到了一个很常见的问题，properties文件中的中文在前台读取到之后，就变成了乱码。前台页面显示乱码的原因在笔者所接触的范围内大概有两个，一个是前台的JSP页面设置的编码格式不正确，这里具体指如下两个变量:</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">pageEncoding=<span class="string">&quot;UTF-8&quot;</span> </span><br><span class="line">contentType=<span class="string">&quot;text/html; UTF-8&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<p>这两个变量如果设置了与浏览器格式不相符的编码格式可能会造成问题,当然这两个变量之间也有区别：</p>
-<ul>
-<li><p>pageEncoding是jsp文件本身的编码</p>
-</li>
-<li><p>contentType的charset是指服务器发送给客户端时的内容编码</p>
-</li>
-</ul>
-<p>这第二个原因就是properties本身文件的编码格式与前台不匹配。比如说properties文件是GBK，而前台（浏览器）是UTF-8,就会造成乱码问题。然而，笔者的Intelij Idea文件编码设置有确实是UTF-8</p>
-<ul>
-<li>Intellij Idea 文件编码设置界面</li>
-</ul>
-<p>File-&gt;Settings-&gt;Editor-&gt;File Encodings</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/img/Intellij-Idea/intellijidea-file-encoding-setting.png"
-                      alt="编码设置"
-                ></p>
-<p>至于这里为何即使采用UTF-8也会出现乱码，网上一说是由于Java解析properties文件是采用字节流读取，所以导致了会将汉字根据字节流读取，具体笔者也没有仔细去深究。_(:з)∠)_</p>
-<p>这里提供如下解决方法：</p>
-<p>解决方法的原则就是在properties中使用unicode来表示中文</p>
-<ul>
-<li><p>如果你是使用的是Intellij Idea。打开如上图所示编码设置的文件，在Transparent native-to-ascii conversion选择框上点上对号即可。Intellij Idea 会在你输入中文的时候自动将它转成Unicode格式，同时你看到的仍然是中文（当你把刚才点上的对号取消后就可以看到Unicode了），另外需要注意的一点是，如果你在选项没有点上对号的时候输入中文的话，解析出来仍然是乱码。</p>
-</li>
-<li><p>如果你是其他IDE或者工具的用户，可以选择使用jdk自带的工具native2ascii.exe，该文件在jdk的bin目录中，使用方式请自行google。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Intellij-Idea</category>
-      </categories>
-      <tags>
-        <tag>Intellij-Idea</tag>
-        <tag>properties</tag>
-        <tag>乱码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>致两年后的自己</title>
-    <url>/2018/02/05/2018-2-5-%E8%87%B4%E4%B8%A4%E5%B9%B4%E5%90%8E%E7%9A%84%E8%87%AA%E5%B7%B1/</url>
-    <content><![CDATA[<p>喂，你好，两年后的自己。我是两年前的你，现在的你过的还好么？你是留在了日本，还是回到了祖国？你是否还保持着自己内心的梦想？世间最可怕的事情莫过于一个人被时间磨平了自己内心的棱角，失去了内心对拒绝平庸的那股挣扎。作为昨日的你，我一直在为未来的你做着各种而样的准备。一个人的一生如果就这么平平淡淡的度过了，是不是会让人内心有些难过。人生在世，终究还是能为世界留下点什么为好。即使自己终将落地归土，也许会给世界带来一点不同。</p>
-<p>现在的你可能已经回到了自己的祖国，从头开始一步步发展；亦或许自己与伙伴们一起拥有了自己的容身之地；或者你还是留在了日本继续发展。但是，无论如何，你做了何种选择，我都会支持你。毕竟，我就是你，过去的你；你就是我，未来的我。更甚者，你也许过的并不如意，但是，即使如此，我也希望你仍旧保持着内心的拒绝，绝不屈服！</p>
-<p>也许你会担心为何24岁的自己仍旧一事无成，但是比起一事无成，我更希望你是因为不断的前进而伤痕累累，而不是在每一孤独的夜晚胡划一根火柴，幻想成功的自己。记住！姜子牙老爷子，重耳他们都是大事完成，虽然我们的智慧和才能并不能与它们相比，但是如先辈此等才干尚且需要隐忍与努力，何况我们呢。你觉得呢未来的自己？</p>
-<p>在你最终步入30岁之前，你需要做的，也许就是不断的为了拒绝平庸而前进，不管最终的结果如何。至于是否能成功，那就成事在人，谋事在天吧！有时候，运气也是一个人的实力的一部分。</p>
-<p>另外，别忘了，多读书，读书不仅是为了学习丰富的知识、拓宽自己的视野，而且她也能使一个人更加的成熟，富有内涵。想想一下，一个充满阳光的下午，你坐在桌子前，一边喝着淡淡的茶香，一边读着盛满智慧的阶梯，岂不美哉？</p>
-<p>恩，虽然有点突兀，也许是有点跑题，亦或许是穿越时间的隧道即将关闭，我想最后用一句诗来表达我自己对你的祝福，也是对我过去的你的嘱托与叮嘱：</p>
-<p>封侯非我意，但愿海波平~</p>
-<p>时间：2018年2月5日23:44:15</p>
-<p>写于一个人在东京寂静的夜晚。——by 梦梦的幻想乡</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>致未来的自己</tag>
-        <tag>梦梦的幻想乡</tag>
-        <tag>拒绝平庸</tag>
       </tags>
   </entry>
   <entry>
